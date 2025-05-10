@@ -17,8 +17,9 @@ Aquí iré subiendo soluciones **paso a paso** de las máquinas que voy resolvie
 ## 🟢 Easy
 
 | Máquina | Sistema | Técnica principal | Writeup |
-|--------|---------|-------------------|---------|
-| EjemploMachine | Linux | Enumeración web + RCE | [Ver writeup](writeups/EjemploMachine.md) |
+|---------|----------|------------------|-------------------------------|
+| Cap | Linux | Enumeración web + RCE   | [Writeup](Easy/Cap/Writeup.md) |
+| Lame | Linux |                        | [Writeup](Easy/Lame/Writeup.md)
 
 ## 🟡 Medium
 
