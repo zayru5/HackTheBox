@@ -2,7 +2,7 @@
 
 Skills: Escaneo y enumeración de servicios - Acceso a servicios remotos - Explotación de vulnerabilidades conocidas  - Uso de herramientas de explotación - Payloads y reverse shells - Post-explotación básica - Linux command-line y permisos
 
-![Lame.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/Lame.png)
+![Lame.png](./Images/Lame.png)
 
 # 🧠 **Habilidades y Skills Necesarios para Completar “Lame”**
 
@@ -194,13 +194,13 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 ---
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image.png)
+![image.png](./Images/image.png)
 
 ### PoC del Exploit - Código en Python
 
 https://www.exploit-db.com/exploits/49757
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image%201.png)
+![image.png](./Imagesimage%201.png)
 
 ### ❌ **Por qué falló**
 
@@ -210,7 +210,7 @@ https://www.exploit-db.com/exploits/49757
 
 ## Conexión al puerto 21 (FTP
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image%202.png)
+![image.png](./Images/image%202.png)
 
 ## ✅ Análisis de conexión FTP
 
@@ -241,7 +241,7 @@ Esta opción permite ejecutar un **script externo** cuando alguien intenta auten
 
 ### Buscando exploits con searchsploit
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image%203.png)
+![image.png](./Images/image%203.png)
 
 ### 🛠️ ¿Cómo funciona la vulnerabilidad?
 
@@ -285,7 +285,7 @@ Esto confirma que el servidor Samba permite acceso anónimo (sin usuario/contras
 
 Es clave para obtener archivos o shells si hay alguna share mal configurada.
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image%204.png)
+![image.png](./Images/image%204.png)
 
 ## 🧾 Explicación por partes:
 
@@ -296,7 +296,7 @@ Es clave para obtener archivos o shells si hay alguna share mal configurada.
 
 ## 🚨 Uso de Metasploit
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image%205.png)
+![image.png](./Images/image%205.png)
 
 ### ✅ **1. Configuración del exploit**
 
@@ -346,7 +346,7 @@ Este comando busca, **en todo el sistema**, archivos llamados:
 - `/home/makis/user.txt` → Archivo del usuario normal
 - `/root/root.txt` → Archivo del usuario root
 
-![image.png](Lame%20by%20Zayrus%201e9cb9b1e60b80b29c45f839166a690a/image%206.png)
+![image.png](./Images/image%206.png)
 
 # ✅ CONCLUSION ✅
 
