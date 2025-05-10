@@ -16,10 +16,10 @@ Aquí iré subiendo soluciones **paso a paso** de las máquinas que voy resolvie
 
 ## 🟢 Easy
 
-| Máquina | Sistema | Técnica principal | Writeup |
-|---------|----------|------------------|-------------------------------|
-| Cap | Linux | Enumeración web + RCE   | [Writeup](Easy/Cap/Writeup.md) |
-| Lame | Linux |                        | [Writeup](Easy/Lame/Writeup.md)
+| Máquina | Sistema  | Técnica principal       | Writeup |
+|---------|----------|-------------------------|--------------------------------|
+| Cap     | Linux    | Enumeración web + RCE   | [Writeup](Easy/Cap/Writeup.md) |
+| Lame    | Linux    |                         | [Writeup](Easy/Lame/Writeup.md)|
 
 ## 🟡 Medium
 
