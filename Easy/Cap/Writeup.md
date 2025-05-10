@@ -2,7 +2,7 @@
 
 System-Info: Cap es una máquina Linux de dificultad fácil que ejecuta un servidor HTTP que realiza funciones administrativas, incluyendo la realización de capturas de red. Controles inadecuados resultan en una Referencia Directa a Objeto Insegura (IDOR) que da acceso a la captura de otro usuario
 
-![Cap.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/Cap.png)
+![Cap.png](./Images/Cap.png)
 
 # 🧠 **Skills necesarias** 🧠
 
@@ -266,19 +266,19 @@ Finished
 | `/ip` | 200 | 17463 | **Ruta válida**. Responde correctamente y devuelve un contenido (probablemente datos en texto plano o JSON). |
 | `/netstat` | 200 | 32787 | También válida. Puede mostrar información del sistema, como conexiones de red (¡potencialmente sensible!). |
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image.png)
+![image.png](./Images/image.png)
 
 Usuario: Nathan
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%201.png)
+![image.png](./Images/image%201.png)
 
 El directorio **`/ip`** muestra el **resultado del comando `ifconfig`**, revelando información sobre interfaces de red, IPs privadas y posibles rutas internas.
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%202.png)
+![image.png](./Images/image%202.png)
 
 El directorio **`/netstat`** muestra el **output del comando `netstat`**, lo cual permite conocer puertos abiertos, conexiones activas y servicios en escucha en el sistema.
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%203.png)
+![image.png](./Images/image%203.png)
 
 El directorio **`/data/*`** muestra **archivos `.pcap` generados dinámicamente**, que contienen capturas de tráfico de red. Estas pueden incluir credenciales, sesiones o información sensible, y representan un **riesgo crítico** si se analizan con herramientas como Wireshark.
 
@@ -332,7 +332,7 @@ wfuzz -c --hc 404,302 -t 400 -u http://10.10.10.245/data/FUZZ -w numeros.txt
  seq 0 1000 > numeros.txt
 ```
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%204.png)
+![image.png](./Images/image%204.png)
 
 ## ✅ Conclusión:
 
@@ -366,9 +366,9 @@ Sirve para **inspeccionar paquetes de red** en tiempo real o desde archivos `.pc
     - [http://10.10.10.245/data/0](http://10.10.10.245/data/0)
 - Analizamos este archivo con WireShark
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%205.png)
+![image.png](./Images/image%205.png)
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%206.png)
+![image.png](./Images/image%206.png)
 
 📄**Análisis .pcap**
 
@@ -406,7 +406,7 @@ Debido a que el protocolo **FTP no cifra la comunicación**, permitiendo su inte
 
 Usando las credenciales `nathan:Buck3tH4TF0RM3!` accedemos por ftp:
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%207.png)
+![image.png](./Images/image%207.png)
 
 - Intentamos conectarnos al otro puerto que esta abierto, el 22 (ssh), con las credenciales de nathan.
 
@@ -430,7 +430,7 @@ SSH reemplaza protocolos antiguos e inseguros como **Telnet** y **FTP**, porque 
 ssh nathan@10.10.10.245
 ```
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%208.png)
+![image.png](./Images/image%208.png)
 
 ## 🧨Escalada de privilegios🧨
 
@@ -506,7 +506,7 @@ De esos binarios, **el más interesante para escalar privilegios es**:
 - Se obtendra la shell de root al ejecutarlo.
 - El comando fue encontrado en GTFOBINS
 
-![image.png](Cap%20by%20Zayrus%201e6cb9b1e60b80708d5cd31aa7b3e10b/image%209.png)
+![image.png](./Images/image%209.png)
 
 ### 🧩 Desglose línea por línea:
 
